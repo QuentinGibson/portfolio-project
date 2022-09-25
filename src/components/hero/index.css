@@ -1,0 +1,24 @@
+.cyan {
+  color: var(--cyan)
+}
+
+.fade-In {
+  animation: fadeIn 1.5s backwards;
+}
+
+.animation-delay-100 {
+  animation-delay: 100ms;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-300 {
+  animation-delay: 300ms;
+}
+
+@keyframes fadeIn {
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
