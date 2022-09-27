@@ -2,6 +2,7 @@ import Hero from "./components/hero/Hero"
 import Navigation from './components/navigation/Navigation'
 import About from './components/about/About'
 import Work from './components/work/Work'
+import Projects from './components/projects/Projects'
 
 export function App() {
   return (
@@ -11,6 +12,7 @@ export function App() {
         <Hero />
         <About />
         <Work />
+        <Projects />
       </div>
     </>
   )
