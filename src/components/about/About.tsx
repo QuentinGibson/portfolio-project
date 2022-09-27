@@ -4,7 +4,7 @@ import med from '../../assets/personal-med.jpg'
 import small from '../../assets/personal-small.jpg'
 const About = () => (
   <>
-    <section class="mt-36">
+    <section class="my-20">
       <h3 class="font-bold after_line text-2xl text-gray-300 mb-10 flex whitespace-nowrap items-center">About Me</h3>
       <div class="flex flex-col mb-2">
         <div class="flex flex-col">
