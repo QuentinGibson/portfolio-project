@@ -3,6 +3,7 @@ import Navigation from './components/navigation/Navigation'
 import About from './components/about/About'
 import Work from './components/work/Work'
 import Projects from './components/projects/Projects'
+import Contact from './components/contact/Contact'
 
 export function App() {
   return (
@@ -13,6 +14,7 @@ export function App() {
         <About />
         <Work />
         <Projects />
+        <Contact />
       </div>
     </>
   )

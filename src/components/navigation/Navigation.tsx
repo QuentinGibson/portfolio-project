@@ -7,7 +7,6 @@ const Navigation = () => (
       <a class="flex content-center" href="/">
         <img src={logo} alt="logo" />
       </a>
-      <NavIcon class="cyan text-4xl"></NavIcon>
     </div>
   </div>
 )
