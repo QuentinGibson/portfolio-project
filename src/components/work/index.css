@@ -1,0 +1,5 @@
+.responsibilities-list::before {
+  content:"▹";
+  color: var(--cyan);
+  margin-right: 10px; 
+}
