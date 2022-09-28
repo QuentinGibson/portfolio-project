@@ -13,7 +13,24 @@ const Projects = () => {
       name: 'Chess Vision Trainer',
       description: "A fullstack (MERN) app. A fun small game that tests your chess notation knowledge and allows you to share your score with the world through a leaderboard.",
       stack: ["React", "Express", "Mysql", "Node.js", "Storybook", "react-router-dom"],
-      github: '',
+      github: 'https://gitlab.com/qgibson/chess-vision-trainer',
+      live: 'https://chess-vision-trainer-osls.onrender.com'
+    },
+    {
+      featured: true,
+      image: "",
+      name: "Chess Pro Player",
+      description: "A React app that replays popular chess games.",
+      stack: ["React", "react-router-dom"],
+      github: 'https://gitlab.com/qgibson/chess-pro-watcher',
+      live: 'https://quentingibson.github.io/chess-pro-watcher/'
+    }, {
+      featured: true,
+      image: "",
+      name: "GroupMe",
+      description: "A fullstack (MERN) app that is a social media mockup. There is",
+      stack: ["React", "react-router-dom"],
+      github: 'https://github.com/QuentinGibson/p7-openclassrooms',
       live: ''
     }
   ]
@@ -37,8 +54,12 @@ const Projects = () => {
             {stackElement}
           </div>
           <div class="flex mt-4 gap-3">
-            <span><a class="icon-link" href={project.github}><GithubIcon class="fill-gray-300 text-xl" /></a></span>
-            <span><a class="icon-link" href={project.live}><ShareIcon class="fill-gray-300 text-gray-300 text-xl" /></a></span>
+            {project.github &&
+              <span><a class="icon-link" href={project.github}><GithubIcon class="fill-gray-300 text-xl" /></a></span>
+            }
+            {project.live &&
+              <span><a class="icon-link" href={project.live}><ShareIcon class="fill-gray-300 text-gray-300 text-xl" /></a></span>
+            }
           </div>
         </div>
       </li>
