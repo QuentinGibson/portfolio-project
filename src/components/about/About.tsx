@@ -4,8 +4,8 @@ import med from '../../assets/personal-med.jpg'
 import small from '../../assets/personal-small.jpg'
 const About = () => (
   <>
-    <section class="my-20">
-      <h3 class="font-bold after_line text-2xl text-gray-300 mb-10 flex whitespace-nowrap items-center">About Me</h3>
+    <section class="my-40 max-w-md mx-auto">
+      <h3 class="font-bold after_line text-2xl text-gray-300 mb-10 flex whitespace-nowrap items-center md:text-4xl">About Me</h3>
       <div class="flex flex-col mb-2">
         <div class="flex flex-col">
           <p class="text-base text-gray-400 mb-4">Welcome to my site! My name is Quentin Gibson and I enjoy creating things using my programming skills. My interest in web development started back in 2012 when I decided to create a website for a family member. I enjoyed making that website and continued to program everyday since!</p>

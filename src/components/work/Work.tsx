@@ -41,15 +41,15 @@ const Work = () => {
 
   const selectedWork = workHistory[selectedNumber]
   const responsibilitiesListItems = workHistory[selectedNumber].responsibilities.map(responsibility => {
-    return <li class="responsibilities-list text-gray-300 text-sm mb-3">{responsibility}</li>
+    return <li class="responsibilities-list text-gray-300 text-sm mb-3 md:text-base">{responsibility}</li>
   })
 
 
   return (
-    <section class="my-20">
-      <h3 class="font-bold after_line text-2xl text-gray-300 mb-10 flex whitespace-nowrap items-center">Work</h3>
+    <section class="my-40 max-w-md mx-auto">
+      <h3 class="font-bold after_line text-2xl text-gray-300 mb-10 flex whitespace-nowrap items-center md:text-4xl">Work</h3>
       <div class="">
-        <div class="flex w-full text-gray-400 h-[42px] justify-start mb-5">
+        <div class="flex w-full text-gray-400 h-[42px] justify-start mb-5 md:justify-center">
           <button
             onClick={handleClick}
             id="0" class={selected === "0" ? selectedButtonClass : unselectedButtonClass}><span> WD Global Group </span></button>
@@ -58,8 +58,8 @@ const Work = () => {
         </div>
         <div>
           <div>
-            <h4 class="text-gray-300 text-lg mb-1"><span>{selectedWork.position}</span><span class="cyan">{" "}@ {selectedWork.company}</span></h4>
-            <p class="text-gray-400 mb-5">{selectedWork.startDate} - {selectedWork.endDate}</p>
+            <h4 class="text-gray-300 text-lg mb-1 md:text-2xl"><span>{selectedWork.position}</span><span class="cyan">{" "}@ {selectedWork.company}</span></h4>
+            <p class="text-gray-400 mb-5 md:text-lg">{selectedWork.startDate} - {selectedWork.endDate}</p>
           </div>
           <div>
             <ul>

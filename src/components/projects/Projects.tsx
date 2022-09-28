@@ -44,7 +44,7 @@ const Projects = () => {
     return (
       <li class="my-5">
         <div class="shadow px-5 py-6 bg-cyan-900">
-          <span class="cyan text-sm mb-2">Featured Project</span>
+          <span class="cyan text-sm mb-2 md:text-xl">Featured Project</span>
           <h4 class="text-gray-300 text-2xl">{project.name}</h4>
           <Popup trigger={<div class="flex items-center justify-start"><button class="hover:underline-offset-4 hover:underline cyan text-base px-2 py-1 rounded bg-slate-900"> View <ImageIcon class="inline-flex" /> </button></div>} position="center center">
             <img src={project.image} alt="Image of project" />
@@ -68,9 +68,9 @@ const Projects = () => {
 
   return (
     <section class="my-20">
-      <h3 class="flex whitespace-nowrap items-center after_line text-gray-300 text-xl mb-10">Some Things I've Built</h3>
+      <h3 class="flex whitespace-nowrap items-center after_line text-gray-300 text-xl mb-10 md:text-4xl">Some Things I've Built</h3>
       <div>
-        <div>
+        <div class="md:mx-auto md:max-w-md">
           <ul>
             {featureProjectsElements}
           </ul>
